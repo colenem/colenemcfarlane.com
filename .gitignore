@@ -15,7 +15,7 @@ web/app/themes/cmcfarlane/vendor
 
 # WordPress
 web/wp
-web/.htaccess
+.htaccess*
 
 # Logs
 *.log
@@ -30,3 +30,7 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+# compressed files
+*.zip
+*.tar*
