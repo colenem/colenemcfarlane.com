@@ -5,6 +5,7 @@ web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
+!web/app/plugins/cm_custom_post_types
 
 # Sage
 web/app/themes/cmcfarlane/.cache-loader
