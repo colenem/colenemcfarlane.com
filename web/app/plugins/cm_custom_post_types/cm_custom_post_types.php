@@ -8,6 +8,8 @@
  * Author URI: https://colenemcfarlane.com
  */
 
+namespace CMcFarlane;
+
 // Blocking direct access to this file.
 defined( 'ABSPATH' ) || exit;
 
@@ -15,4 +17,4 @@ define( 'CM_CPT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 include_once( CM_CPT_PLUGIN_DIR . 'cm_default_custom_post_type.php');
 include_once( CM_CPT_PLUGIN_DIR . 'cm_jobs_custom_post_type.php' );
-include_once( CM_CPT_PLUGIN_DIR . 'cm_cpt__portfolio_projects.php' );
+include_once( CM_CPT_PLUGIN_DIR . 'cm_portfolio_custom_post_type.php' );
