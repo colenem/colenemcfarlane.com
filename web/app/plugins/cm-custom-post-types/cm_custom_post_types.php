@@ -15,6 +15,9 @@ defined( 'ABSPATH' ) || exit;
 
 define( 'CM_CPT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
+require_once( CM_CPT_PLUGIN_DIR . '../cmb2/init.php' );
+
 include_once( CM_CPT_PLUGIN_DIR . 'cm_default_custom_post_type.php');
 include_once( CM_CPT_PLUGIN_DIR . 'cm_jobs_custom_post_type.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'cm_portfolio_custom_post_type.php' );
+include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/setup.php' );

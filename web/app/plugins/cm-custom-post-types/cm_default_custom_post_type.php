@@ -24,7 +24,6 @@ class DefaultCustomPostType {
      */
     public static function init()
     {
-        // $self is the same as $this here
         $self = new self();
         add_action( 'init', array( $self, 'register_default_custom_post_type') );
     }
