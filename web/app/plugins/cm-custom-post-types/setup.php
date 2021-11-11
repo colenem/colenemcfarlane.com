@@ -15,9 +15,13 @@ defined( 'ABSPATH' ) || exit;
 
 define( 'CM_CPT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
+/* Load CMB2 */
 require_once( CM_CPT_PLUGIN_DIR . '../cmb2/init.php' );
 
-include_once( CM_CPT_PLUGIN_DIR . 'cm_default_custom_post_type.php');
-include_once( CM_CPT_PLUGIN_DIR . 'cm_jobs_custom_post_type.php' );
-include_once( CM_CPT_PLUGIN_DIR . 'cm_portfolio_custom_post_type.php' );
-include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/setup.php' );
+/* Post Types */
+include_once( CM_CPT_PLUGIN_DIR . 'DefaultCustomPostType.php');
+include_once( CM_CPT_PLUGIN_DIR . 'JobsCustomPostType.php' );
+include_once( CM_CPT_PLUGIN_DIR . 'PortfolioCustomPostType.php' );
+
+/* Meta Boxes */
+include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/CMB2MetaBox.php' );
