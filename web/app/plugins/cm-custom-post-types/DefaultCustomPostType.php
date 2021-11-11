@@ -65,5 +65,5 @@ class DefaultCustomPostType {
 }
 
 // create and initialize new instance of DefaultCustomPostType
-$defaultCustomPostType = new DefaultCustomPostType();
-$defaultCustomPostType->init();
+$default_custom_post_type = new DefaultCustomPostType();
+$default_custom_post_type->init();

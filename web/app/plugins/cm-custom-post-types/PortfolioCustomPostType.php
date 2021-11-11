@@ -69,5 +69,5 @@ class PortfolioCustomPostType extends DefaultCustomPostType {
 	}
 }
 
-$portfolioCustomPostType = new PortfolioCustomPostType();
-$portfolioCustomPostType->init();
+$portfolio_custom_post_type = new PortfolioCustomPostType();
+$portfolio_custom_post_type->init();

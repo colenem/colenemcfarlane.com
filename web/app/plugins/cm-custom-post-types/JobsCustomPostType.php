@@ -69,5 +69,5 @@ class JobsCustomPostType extends DefaultCustomPostType {
 	}
 }
 
-$jobsCustomPostType = new JobsCustomPostType();
-$jobsCustomPostType->init();
+$jobs_custom_post_type = new JobsCustomPostType();
+$jobs_custom_post_type->init();
