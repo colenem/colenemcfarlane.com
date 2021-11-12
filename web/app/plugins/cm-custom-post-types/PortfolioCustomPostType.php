@@ -41,7 +41,7 @@ class PortfolioCustomPostType extends DefaultCustomPostType {
 			'title',
 			'author',
 			'revisions',
-			'custom-fields',
+			'thumbnail',
 		);
 	}
 

@@ -41,7 +41,6 @@ class JobsCustomPostType extends DefaultCustomPostType {
 			'title',
 			'author',
 			'revisions',
-			'custom-fields',
 		);
 	}
 
