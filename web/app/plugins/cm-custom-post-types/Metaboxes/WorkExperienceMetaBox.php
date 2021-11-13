@@ -1,6 +1,7 @@
 <?php
 
 namespace CMcFarlane\MetaBoxes;
+use WP_REST_Server;
 
 class WorkExperienceMetaBox extends CMB2MetaBox {
     public static function init() {
@@ -27,7 +28,7 @@ class WorkExperienceMetaBox extends CMB2MetaBox {
             'show_names'   => true,
             'hookup'       => true,
             'save_fields'  => true,
-            // 'show_in_rest' => WP_REST_Server::READABLE,
+            'show_in_rest' => WP_REST_Server::READABLE,
         );
     }
 
