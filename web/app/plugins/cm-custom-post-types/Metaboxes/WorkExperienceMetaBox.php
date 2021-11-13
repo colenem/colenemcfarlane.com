@@ -17,8 +17,6 @@ class WorkExperienceMetaBox extends CMB2MetaBox {
         $post_type = $this->get_CMB2_post_type();
         $prefix = 'cm_';
 
-        error_log( $post_type . "\r\n", 3, LOGS . 'error_log.log' );
-
         return array(
             'id'           => $prefix . 'work_experience',
             'title'        => 'Work Experience',

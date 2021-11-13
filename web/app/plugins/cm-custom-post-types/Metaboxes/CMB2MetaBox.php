@@ -11,15 +11,6 @@ class CMB2MetaBox {
     }
 
     public function get_CMB2_post_type() {
-        /* $path = trailingslashit( dirname( plugin_basename( __FILE__ ) ) ) . 'class';
-        error_log( "post\r\n", 3, LOGS . 'error_log.log' );
-        error_log( "INFO: " . __DIR__ . "\r\n", 
-                    3, LOGS . 'error_log.log' );
-        error_log( "ABSPATH: " . ABSPATH . "\r\n", 
-                    3, LOGS . 'error_log.log' );
-        error_log( "\e[0;31mWP_PLUGIN_DIR:" . WP_PLUGIN_DIR . "\r\n", 3, LOGS . 'error_log.log' );
-        error_log( "\e[0;32mCMB2_INIT: " . WP_CONTENT_DIR . "/plugins/cmb2/init.php\r\n", 3, LOGS . 'error_log.log' );
-        error_log( "\e[0;35mCM_CPT_PLUGIN_DIR: " . CM_CPT_PLUGIN_DIR . "\r\n", 3, LOGS . 'error_log.log' ); */
         return 'post';
     }
 
