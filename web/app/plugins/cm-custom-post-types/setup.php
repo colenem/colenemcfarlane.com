@@ -27,3 +27,7 @@ include_once( CM_CPT_PLUGIN_DIR . 'PortfolioCustomPostType.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/CMB2MetaBox.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/WorkExperienceMetaBox.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/PortfolioMetaBox.php' );
+
+/* API */
+include_once( CM_CPT_PLUGIN_DIR . 'API/API.php' );
+include_once( CM_CPT_PLUGIN_DIR . 'API/CM_REST_Endpoints.php' );

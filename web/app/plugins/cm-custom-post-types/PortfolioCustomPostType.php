@@ -56,8 +56,6 @@ class PortfolioCustomPostType extends DefaultCustomPostType {
 			'show_in_menu'        => true,
 			'show_in_nav_menus'   => true,
 			'show_in_admin_bar'   => true,
-			'show_in_rest'        => true,
-			'rest_base'           => 'portfolio',
 			'menu_position'       => 21,
 			'menu_icon'           => 'dashicons-portfolio',
 			'can_export'          => true,
