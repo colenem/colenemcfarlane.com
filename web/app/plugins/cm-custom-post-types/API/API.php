@@ -39,8 +39,8 @@ class CM_REST_Api {
     }
 
     public function register_rest_routes() {
-        $work_experience_route = new CM_REST_Work_Experience_Route();
-        $portfolio_route       = new CM_REST_Portfolio_Route();
+        $work_experience_route = new CM_REST_Work_Experience_Endpoint();
+        $portfolio_route       = new CM_REST_Portfolio_Endpoint();
 
         $endpoints = [ $work_experience_route, $portfolio_route ];
 
