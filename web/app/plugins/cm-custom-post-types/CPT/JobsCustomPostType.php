@@ -55,8 +55,6 @@ class JobsCustomPostType extends DefaultCustomPostType {
 			'show_in_menu'        => true,
 			'show_in_nav_menus'   => true,
 			'show_in_admin_bar'   => true,
-			'show_in_rest'        => true,
-			'rest_base'           => 'work-experience',
 			'menu_position'       => 20,
 			'menu_icon'           => 'dashicons-businessperson',
 			'can_export'          => true,
