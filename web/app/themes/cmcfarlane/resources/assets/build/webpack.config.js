@@ -2,6 +2,7 @@
 
 const webpack = require('webpack');
 const merge = require('webpack-merge');
+const sass = require('sass');
 const CleanPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
@@ -92,8 +93,8 @@ let webpackConfig = {
             { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps } },
             {
               loader: 'sass', options: {
+                implementation: sass,
                 sourceMap: config.enabled.sourceMaps,
-                sourceComments: true,
               },
             },
           ],

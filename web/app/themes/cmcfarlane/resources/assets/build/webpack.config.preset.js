@@ -3,6 +3,7 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = require('./config');
+const sass = require('sass');
 
 /** Default PostCSS plugins */
 let postcssPlugins = [
@@ -35,8 +36,8 @@ module.exports = {
               options: {
                 postcssOptions: {
                   parser: config.enabled.optimize
-                    ? 'postcss-safe-parser'
-                    : undefined,
+                  ? 'postcss-safe-parser'
+                  : undefined,
                   plugins: postcssPlugins,
                   sourceMap: false,
                 },
@@ -48,7 +49,7 @@ module.exports = {
             },
             {
               loader: 'sass',
-              options: { sourceComments: true, sourceMap: false },
+              options: { implementation: sass, sourceMap: false },
             },
           ],
         }),

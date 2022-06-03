@@ -5,23 +5,17 @@ namespace CMcFarlane\CustomPostTypes;
 // Block direct access to this file.
 defined( 'ABSPATH' ) || exit;
 
-class PortfolioCustomPostType extends DefaultCustomPostType {
-
-	public static function init()
-    {
-        $self = new self();
-        add_action( 'init', array( $self, 'register_default_custom_post_type') );
-    }
+class ProjectsCustomPostType extends PortfolioCustomPostTypes {
 
     public function get_custom_post_type_name() {
-        return 'portfolio';
+        return 'projects';
     }
 
     public function get_custom_post_type_labels() {
 		return array(
-			'name'               => _x( 'Portfolio', 'Post Type General Name', 'cmcfarlane' ),
+			'name'               => _x( 'Projects', 'Post Type General Name', 'cmcfarlane' ),
 			'singular_name'      => _x( 'Project', 'Post Type Singular Name', 'cmcfarlane' ),
-			'menu_name'          => _x( 'Portfolio', 'admin menu', 'cmcfarlane' ),
+			'menu_name'          => _x( 'Projects', 'admin menu', 'cmcfarlane' ),
 			'name_admin_bar'     => _x( 'Project', 'add new on admin bar', 'cmcfarlane' ),
 			'add_new'            => _x( 'Add New', 'Project', 'cmcfarlane' ),	
 			'add_new_item'       => __( 'Add New Project', 'cmcfarlane' ),
@@ -66,6 +60,3 @@ class PortfolioCustomPostType extends DefaultCustomPostType {
 		);
 	}
 }
-
-$portfolio_custom_post_type = new PortfolioCustomPostType();
-$portfolio_custom_post_type->init();

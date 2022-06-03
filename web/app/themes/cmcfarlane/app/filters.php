@@ -13,6 +13,10 @@ add_filter('body_class', function (array $classes) {
         }
     }
 
+    if ( is_front_page() ) {
+        $classes[] = 'h-body-full-screen';
+    }
+
     /** Add class if sidebar is active */
     if (display_sidebar()) {
         $classes[] = 'sidebar-primary';

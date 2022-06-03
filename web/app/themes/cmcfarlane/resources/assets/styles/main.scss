@@ -5,10 +5,10 @@
 @tailwind base;
 
 /** Import variables */
-@import "common/variables";
+@import 'common/variables';
 
 /** Import everything from autoload */
-@import "./autoload/**/*";
+@import './autoload/**/*';
 
 /**
  * Import npm dependencies
@@ -24,16 +24,19 @@
 @tailwind components;
 
 /** Import theme styles */
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+@import 'components/buttons';
+@import 'components/comments';
+@import 'components/forms';
+@import 'components/wp-classes';
+@import 'layouts/header';
+@import 'layouts/sidebar';
+@import 'layouts/footer';
+@import 'layouts/pages';
+@import 'layouts/posts';
+@import 'layouts/tinymce';
+@import 'layouts/personal-intro';
+@import 'layouts/resume';
+@import 'layouts/projects';
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

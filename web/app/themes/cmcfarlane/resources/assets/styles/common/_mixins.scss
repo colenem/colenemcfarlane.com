@@ -1,0 +1,32 @@
+@mixin screen-size($breakpoint) {
+    @if ($breakpoint == extra-small) {
+        @media only screen and (max-width: #{$extra-small}) {
+            @content;
+        }
+    }
+    @if ($breakpoint == small) {
+        @media only screen and (min-width: #{$small}) {
+            @content;
+        }
+    }
+    @if ($breakpoint == medium) {
+        @media only screen and (min-width: #{$medium}) {
+            @content;
+        }
+    }
+    @if ($breakpoint == large) {
+        @media only screen and (min-width: #{$large}) {
+            @content;
+        }
+    }
+    @if ($breakpoint == extra-large) {
+        @media only screen and (min-width: #{$extra-large}) {
+            @content;
+        }
+    }
+    @if ($breakpoint == xxl) {
+        @media only screen and (min-width: #{$xxl}) {
+            @content;
+        }
+    }
+}

@@ -1,17 +1,16 @@
 <?php
 
+/**
+ * Jobs Custom Post Type
+ * Used to display work experience
+ */
+
 namespace CMcFarlane\CustomPostTypes;
 
 // Block direct access to this file.
 defined( 'ABSPATH' ) || exit;
 
-class JobsCustomPostType extends DefaultCustomPostType {
-
-	public static function init()
-    {
-        $self = new self();
-        add_action( 'init', array( $self, 'register_default_custom_post_type') );
-    }
+class JobsCustomPostType extends PortfolioCustomPostTypes {
 
     public function get_custom_post_type_name() {
         return 'jobs';
@@ -65,6 +64,3 @@ class JobsCustomPostType extends DefaultCustomPostType {
 		);
 	}
 }
-
-$jobs_custom_post_type = new JobsCustomPostType();
-$jobs_custom_post_type->init();

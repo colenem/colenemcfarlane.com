@@ -6,25 +6,7 @@ namespace CMcFarlane\API;
 class CM_REST_Api {
     public function init() {
         $self = new self();
-        add_filter( 'rest_endpoints', [ $self, 'filter_rest_routes' ] );
         add_action( 'rest_api_init', [ $self, 'register_rest_routes' ] );
-    }
-
-    public function filter_rest_routes( $endpoints ) {
-        $valid_endpoints = array(
-            '/',
-            '/wp/v2',
-            '/wp/v2/work-experience',
-            '/wp/v2/portfolio',
-        );
-    
-        foreach ( $endpoints as $key => $value ) {
-            if ( ! in_array( $key , $valid_endpoints ) ) {
-                unset( $endpoints[ $key ] );
-            }
-        }
-    
-        return $endpoints;
     }
 
     public function register_route( $endpoint ) {
@@ -40,7 +22,7 @@ class CM_REST_Api {
 
     public function register_rest_routes() {
         $work_experience_route = new CM_REST_Work_Experience_Endpoint();
-        $portfolio_route       = new CM_REST_Portfolio_Endpoint();
+        $portfolio_route       = new CM_REST_Projects_Endpoint();
 
         $endpoints = [ $work_experience_route, $portfolio_route ];
 

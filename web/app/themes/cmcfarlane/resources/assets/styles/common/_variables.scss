@@ -1,0 +1,18 @@
+$screen-sizes: 480, 640, 768, 1024, 1280, 1536;
+
+$screen-xs-min: pixelsToRem(nth($screen-sizes, 1));
+$screen-xs-max: pixelsToRem(nth($screen-sizes, 1) - 1);
+
+$screen-sm-min: pixelsToRem(nth($screen-sizes, 2));
+$screen-sm-max: pixelsToRem(nth($screen-sizes, 2) - 1);
+
+$screen-md-min: pixelsToRem(nth($screen-sizes, 3));
+$screen-md-max: pixelsToRem(nth($screen-sizes, 3) - 1);
+
+$screen-lg-min: pixelsToRem(nth($screen-sizes, 4));
+$screen-lg-max: pixelsToRem(nth($screen-sizes, 4) - 1);
+
+$screen-xl-min: pixelsToRem(nth($screen-sizes, 5));
+$screen-xl-max: pixelsToRem(nth($screen-sizes, 5) - 1);
+
+$screen-xxl-min: pixelsToRem(nth($screen-sizes, 6) - 1);

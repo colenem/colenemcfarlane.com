@@ -1,0 +1,11 @@
+@function pixelsToRem($pixels) {
+    $rem: math.div($pixels, 16px);
+
+    @return #{$rem}rem;
+}
+
+// usage: @include fontSize( 16px )
+@mixin fontSize($font-px) {
+    font-size: $font-px;
+    font-size: pixelsToRem($font-px);
+}

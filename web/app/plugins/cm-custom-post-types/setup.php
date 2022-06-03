@@ -19,17 +19,18 @@ define( 'CM_CPT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 require_once( WP_PLUGIN_DIR . '/cmb2/init.php' );
 
 /* Post Types */
-include_once( CM_CPT_PLUGIN_DIR . 'CPT/DefaultCustomPostType.php');
+include_once( CM_CPT_PLUGIN_DIR . 'CPT/CPT.php');
+include_once( CM_CPT_PLUGIN_DIR . 'CPT/PortfolioCustomPostTypes.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'CPT/JobsCustomPostType.php' );
-include_once( CM_CPT_PLUGIN_DIR . 'CPT/PortfolioCustomPostType.php' );
+include_once( CM_CPT_PLUGIN_DIR . 'CPT/ProjectsCustomPostType.php' );
 
 /* Meta Boxes */
 include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/CMB2MetaBox.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/WorkExperienceMetaBox.php' );
-include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/PortfolioMetaBox.php' );
+include_once( CM_CPT_PLUGIN_DIR . 'Metaboxes/ProjectsMetaBox.php' );
 
 /* API */
 include_once( CM_CPT_PLUGIN_DIR . 'API/API.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'API/CM_REST_Endpoints.php' );
 include_once( CM_CPT_PLUGIN_DIR . 'API/CM_REST_WorkExperienceEndpoint.php' );
-include_once( CM_CPT_PLUGIN_DIR . 'API/CM_REST_PortfolioEndpoint.php' );
+include_once( CM_CPT_PLUGIN_DIR . 'API/CM_REST_ProjectsEndpoint.php' );

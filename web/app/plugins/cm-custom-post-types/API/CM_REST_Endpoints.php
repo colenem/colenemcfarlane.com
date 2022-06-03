@@ -8,7 +8,7 @@ namespace CMcFarlane\API;
  */
 
 interface CM_REST_EndpointInterface {
-# route name (.e.g., /portfolio)
+# route name (.e.g., /projects)
 # route method (get,post)
 # callback function to do the work
 # permission_callback, can you access this endpoint? (return true, false, or WP_ERROR)
@@ -25,8 +25,8 @@ interface CM_REST_EndpointInterface {
 }
 
 abstract class CM_REST_Endpoint implements CM_REST_EndpointInterface {
-    #child class will implement the rest of the functions
-    #described in the interface above
+    # child class will implement the rest of the functions
+    # described in the interface above
     public function get_route_callback_method() {
         return [ $this, 'response_callback' ];
     }

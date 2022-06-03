@@ -90,17 +90,3 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
-
-/**
- * Enable features from Soil when plugin is activated
- * @link https://roots.io/plugins/soil/
- */
-add_theme_support('soil', [
-    'clean-up',           # cleaner WP markup
-    'disable-trackbacks', # disable trackbacks
-    'js-to-footer',       # move all JS to the footer
-    'nav-walker',         # cleaner walker css for nav menus
-    'nice-search',        # convert search results from /?s = query to /search/query/
-    'relative-urls'       # root relative URLs
-]);
-

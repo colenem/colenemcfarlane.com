@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Used to display custom meta fields with the 'jobs'
+ * custom post type
+ */
+
 namespace CMcFarlane\MetaBoxes;
 use WP_REST_Server;
 
@@ -84,10 +89,19 @@ class WorkExperienceMetaBox extends CMB2MetaBox {
                 'on_front'   => false,
                 'save_field' => true,
             ),
+            array(
+                'name'       => __( 'Position', 'cmcfarlane' ),
+                'id'         => 'position',
+                'type'       => 'text_small',
+                'repeatable' => false,
+                'show_names' => true,
+                'on_front'   => false,
+                'save_field' => true,
+            ),
         );
     }
 
-    public function get_CMB2_group_fields() {
+    public function get_CMB2_group_fields() { # Goes with Job Responsibilities group meta
         return array(
             'name'       => esc_html__( 'Responsibility/Highlight', 'cmcfarlane' ),
             'id'         => 'job_responsibilty',

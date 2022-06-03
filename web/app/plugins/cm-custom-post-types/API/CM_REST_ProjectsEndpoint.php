@@ -2,9 +2,9 @@
 
 namespace CMcFarlane\API;
 
-class CM_REST_Portfolio_Endpoint extends CM_REST_Endpoint {
+class CM_REST_Projects_Endpoint extends CM_REST_Endpoint {
     public function get_route_name() {
-        return 'portfolio';
+        return 'projects';
     }
 
     public function get_route_HTTP_method() {
@@ -26,7 +26,7 @@ class CM_REST_Portfolio_Endpoint extends CM_REST_Endpoint {
         $project_ids = get_posts(
             array(
                 'posts_per_page' => -1,
-                'post_type'      => 'portfolio',
+                'post_type'      => 'projects',
                 'fields'         => 'ids'
             )
         );

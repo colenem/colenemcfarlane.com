@@ -3,14 +3,14 @@
 namespace CMcFarlane\MetaBoxes;
 use WP_REST_Server;
 
-class PortfolioMetaBox extends CMB2MetaBox {
+class ProjectsMetaBox extends CMB2MetaBox {
     public static function init() {
         $self = new self();
         add_action( 'cmb2_init', array( $self, 'create_CMB2_meta_box') );
     }
 
     public function get_CMB2_post_type() {
-        return 'portfolio';
+        return 'projects';
     }
 
     public function get_CMB2_meta_box_options() {
@@ -18,7 +18,7 @@ class PortfolioMetaBox extends CMB2MetaBox {
         $prefix = 'cm_';
 
         return array(
-            'id'           => $prefix . 'portfolio_project',
+            'id'           => $prefix . 'projects',
             'title'        => 'Project Info',
             'object_types' => [ $post_type ],
             'context'      => 'normal',
@@ -41,9 +41,18 @@ class PortfolioMetaBox extends CMB2MetaBox {
                 'on_front'   => false,
                 'save_field' => true,
             ),
+            array(
+                'name'       => __( 'Position', 'cmcfarlane' ),
+                'id'         => 'position',
+                'type'       => 'text_small',
+                'repeatable' => false,
+                'show_names' => true,
+                'on_front'   => false,
+                'save_field' => true,
+            ),
         );
     }
 }
 
-$portfolio_meta_box = new PortfolioMetaBox();
-$portfolio_meta_box->init();
+$projects_meta_box = new ProjectsMetaBox();
+$projects_meta_box->init();
