@@ -3,7 +3,8 @@
 
     &__container {
         color: theme('colors.cream.DEFAULT');
-        font: 1.5rem theme('fontFamily.poppins');
+        font-size: 1.5rem;
+        padding: 1rem 2rem 4rem 2rem;
     }
 
     &__personal-statement-container {
@@ -36,6 +37,8 @@
             text-align: center;
             width: 12rem;
             padding: 0.75rem 0;
+            font-size: 22px;
+            font-weight: 500;
 
             &:hover {
                 background-color: theme('colors.cream.DEFAULT');
@@ -67,7 +70,7 @@
         }
 
         .animated-text {
-            font: 4rem theme('fontFamily.teko');
+            font-size: 4rem;
             width: 25rem;
             padding-top: 4px;
 
