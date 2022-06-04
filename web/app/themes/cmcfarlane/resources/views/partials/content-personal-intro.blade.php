@@ -1,7 +1,7 @@
-<section class="personal-intro">
-    <div class="personal-intro__container">
+<section class="personal-intro h-full-length flex font-secondary">
+    <div class="personal-intro__container max-w-7xl m-auto">
         <div class="personal-intro__animation-container flex flex-wrap flex-row justify-between">
-            <div class="animated-text">
+            <div class="animated-text font-alt">
                 <p class="line-1">Hiya!</p>
                 <p class="line-2 w-auto">My name is <span>Colene</span></p>
                 <p class="line-3">and I'm a</p>
