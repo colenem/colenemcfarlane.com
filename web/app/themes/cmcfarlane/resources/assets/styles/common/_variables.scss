@@ -1,3 +1,19 @@
+:root {
+    --fullscreen-height: 100vh;
+    --color-primary: theme('colors.blue.DEFAULT');
+    --color-primary-light: theme('colors.blue.light');
+    --color-primary-lighter: theme('colors.blue.lighter');
+    --color-secondary: theme('colors.cream.DEFAULT');
+    --color-secondary-light: theme('colors.cream.light');
+    --color-secondary-dark: theme('colors.cream.dark');
+    --color-neutral: theme('colors.charcoalBlack.DEFAULT');
+    //fonts
+    --text-primary: theme('fontFamily.poppins');
+    --text-secondary: theme('fontFamily.fira-sans');
+    --text-alt: theme('fontFamily.teko');
+    --text-logo: theme('fontFamily.montserrat');
+}
+
 $screen-sizes: 480, 640, 768, 1024, 1280, 1536;
 
 $screen-xs-min: pixelsToRem(nth($screen-sizes, 1));

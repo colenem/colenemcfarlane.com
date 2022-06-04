@@ -92,13 +92,19 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        'fira-sans': ['Fira Sans', 'sans-serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
         'pt-mono': ['PT Mono', 'monospace'],
         'teko': ['Teko', 'sans-serif'],
+
+        primary: 'var(--text-primary)',
+        seconday: 'var(--text-secondary)',
+        alt: 'var(--text-alt)',
+        logo: 'var(--text-logo)',
       },
       height: {
-        'body-full-screen': 'calc(var(--full-screen-height) - 10rem)'
+        'full-length': 'calc(var(--fullscreen-height) - 9rem)'
       },
       maxWidth: {
         '7xl': '96rem',
