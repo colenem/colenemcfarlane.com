@@ -1,5 +1,6 @@
 // Global styles are set in the Tailwind config using a plugin
 
+html,
 body {
-    --full-screen-height: 100vh;
+    height: 100vh;
 }
